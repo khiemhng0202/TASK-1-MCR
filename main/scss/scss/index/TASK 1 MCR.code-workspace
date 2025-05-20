@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "TASK 1 MCR",
+			"path": "../../../.."
+		},
+		{
+			"name": "exercise-main",
+			"path": "../../../../../../../../Downloads/exercise-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TASK 1 MCR"
+	}
+}
