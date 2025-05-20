@@ -121,6 +121,14 @@ body::before {
     border-radius: 1.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
+
+  .hero a {
+    background-image: url(/main/scss/scss/index/img/vt\ 2.png);
+    width: 163px;
+    height: 179px;
+    top: 519px;
+    left: 1060px;
+  }
   
 
   
