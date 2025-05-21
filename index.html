@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <title>Good Cleaner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+  <style>
+    @font-face {
+      font-family: 'Nova';
+      src: url('/src/fonts/Nova-Regular.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Nova';
+      src: url('/src/fonts/Nova-Bold.otf') format('opentype');
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    body {
+      font-family: 'Nova', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="left-header">
+      <img src="/img/logo.png" alt="Logo">
+    </div>
+    <div class="right-header">
+      <button class="btn-header">Trang Chủ</button>
+      <button class="btn-header">Dịch Vụ</button>
+      <button class="btn-header">Liên Hệ</button>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div class="body">
+    <div class="background-1">
+      <img src="/img/vt 1.png" alt="Start" class="start start-left">
+      <img src="/img/vt 2.png" alt="Start" class="start start-right">
+
+      <div class="goodcleaner-box">
+        <div class="goodcleaner">GOOD CLEANER</div>
+        <div class="goodcleaner-content">
+          <p>
+            Good Cleaner là một trong những doanh nghiệp trong lĩnh vực vệ sinh công nghiệp cung cấp các
+            dịch vụ vệ sinh xây dựng, sau xây dựng, vệ sinh nhà cửa, các dịch vụ tạp vụ,…
+          </p>
+          <p>
+            Trong suốt thời gian từ khi hoạt động đến nay, Good Cleaner vẫn luôn giữ vững châm ngôn UY TÍN –
+            CHUYÊN NGHIỆP – TẬN TÂM – GIÁ TỐT nhằm mang lại cho khách hàng sự hài lòng nhất, thỏa mãn tối
+            đa nhu cầu của khách hàng.
+          </p>
+          <p>
+            Good Cleaner luôn luôn và không ngừng phát triển cải thiện quy trình máy móc thiết bị nhằm nâng
+            cao chất lượng dịch vụ mang đến những trải nghiệm tốt nhất cho quý khách hàng. Chúng tôi tự tin
+            là một trong những công ty vệ sinh công nghiệp uy tín chuyên nghiệp top đầu tại Miền Tây.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="background-2">
+      <div class="service-box">
+        <div class="service">Dịch vụ của chúng tôi</div>
+
+        <div class="service-card">
+          <div class="service-item" onclick="openDetail('Trông trẻ tại nhà')">
+            <div class="service-title">Trông trẻ tại nhà</div>
+            <div class="service-detail">Chi tiết</div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-item" onclick="openDetail('Vệ sinh máy lạnh')">
+            <div class="service-title">Vệ Sinh Máy Lạnh</div>
+            <div class="service-detail">Chi tiết</div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-item" onclick="openDetail('Giúp việc nhà theo giờ')">
+            <div class="service-title">Giúp việc nhà theo giờ</div>
+            <div class="service-detail">Chi tiết</div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-item" onclick="openDetail('Chăm sóc người bệnh')">
+            <div class="service-title">Chăm Sóc Người Bệnh</div>
+            <div class="service-detail">Chi tiết</div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-item" onclick="openDetail('Chăm sóc người cao tuổi')">
+            <div class="service-title">Chăm Sóc Người Cao Tuổi</div>
+            <div class="service-detail">Chi tiết</div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-item" onclick="openDetail('Tổng vệ sinh')">
+            <div class="service-title">Tổng Vệ Sinh</div>
+            <div class="service-detail">Chi tiết</div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-item" onclick="openDetail('Vệ sinh sofa, rèm, nệm')">
+            <div class="service-title">Vệ Sinh Sofa, Rèm, Nệm</div>
+            <div class="service-detail">Chi tiết</div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-item" onclick="openDetail('Đi chợ')">
+            <div class="service-title">Đi Chợ</div>
+            <div class="service-detail">Chi tiết</div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-item" onclick="openDetail('Phun khử khuẩn')">
+            <div class="service-title">Phun Khử Khuẩn</div>
+            <div class="service-detail">Chi tiết</div>
+            <div class="service-arrow">→</div>
+          </div>
+
+          <!-- Service Details Popup -->
+          <div class="service-content hidden" id="service-content">
+            <div class="card-content">
+              <div class="border-content">
+                <h2 id="content-title">Tiêu đề</h2>
+                <p id="content-desc">Mô tả chi tiết</p>
+                <span class="back-btn" onclick="closeDetail()">Quay lại</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="content-footer">
+      <div class="left-footer">
+        <h1>Thông tin liên hệ _____</h1>
+        <img src="/img/logo.png" alt="Logo Footer">
+        <div>
+          <p>Địa chỉ: 121, Đường Hai Bà Trưng, Quận Ninh Kiều, Thành phố Cần Thơ</p>
+          <p>Điện thoại: 0927.2222.33 - 0325.999.666</p>
+          <p>Email: goodcleaner@gmail.com</p>
+          <p>Website: gcforyourhouse.com</p>
+        </div>
+      </div>
+
+      <div class="right-footer">
+        <h1>Dịch Vụ _____</h1>
+        <div onclick="openDetail('Trông trẻ tại nhà')">Trông trẻ tại nhà</div>
+        <div onclick="openDetail('Vệ sinh máy lạnh')">Vệ Sinh Máy Lạnh</div>
+        <div onclick="openDetail('Giúp việc nhà theo giờ')">Giúp việc nhà theo giờ</div>
+        <div onclick="openDetail('Chăm sóc người bệnh')">Chăm Sóc Người Bệnh</div>
+        <div onclick="openDetail('Chăm sóc người cao tuổi')">Chăm Sóc Người Cao Tuổi</div>
+        <div onclick="openDetail('Tổng vệ sinh')">Tổng Vệ Sinh</div>
+        <div onclick="openDetail('Vệ sinh sofa, rèm, nệm')">Vệ Sinh Sofa, Rèm, Nệm</div>
+        <div onclick="openDetail('Đi chợ')">Đi Chợ</div>
+        <div onclick="openDetail('Phun khử khuẩn')">Phun Khử Khuẩn</div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

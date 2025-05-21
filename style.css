@@ -1,0 +1,403 @@
+/* ===========================
+   FONT IMPORTS
+=========================== */
+@font-face {
+  font-family: Nova;
+  src: url('Font/Proxima Nova Alt Condensed Regular.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Nova;
+  src: url('Font/Proxima Nova Alt Condensed Bold.otf') format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ===========================
+   HEADER STYLES
+=========================== */
+.header {
+  display: flex;
+}
+
+.left-header {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.left-header img {
+  width: 243px;
+  height: 131px;
+}
+
+.right-header {
+  width: 50%;
+  display: flex;
+  justify-content: left;
+}
+
+.btn-header {
+  width: 227px;
+  height: 134px;
+  font-family: 'Proxima Nova A', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #F8F9FC;
+  color: #042B80;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-header.selected {
+  color: #EDF0F5;
+  background-color: #637BAD;
+}
+
+/* ===========================
+   FOOTER STYLES
+=========================== */
+.footer {
+  background-color: #02297F;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: start;
+  padding-left: 200px;
+}
+
+.left-footer img {
+  width: 371px;
+  height: 160px;
+}
+
+.left-footer div p {
+  font-family: 'Proxima Nova A', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #FFFFFFCC;
+  line-height: 60px;
+  max-width: 70%;
+}
+
+.right-footer {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: start;
+}
+
+.right-footer div {
+  font-family: 'Proxima Nova A', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 65px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.line {
+  height: 4px;
+  background-color: #637BAD;
+  width: 80%;
+}
+
+h1 {
+  font-family: 'Proxima Nova A', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: start;
+  text-transform: uppercase;
+  color: #FFFFFFCC;
+}
+
+/* ===========================
+   BODY STYLES
+=========================== */
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Backgrounds */
+.background-1 {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%),
+              url(/img/body.webp) no-repeat center/cover;
+  width: 100%;
+  height: 1000px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.background-2 {
+  background: url(/img/unsplash_Dl6H4_nzBpE.png) no-repeat center/cover;
+  width: 100%;
+  height: 2300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 400px;
+}
+
+/* Start Decorations */
+.start {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  z-index: 2;
+}
+
+.start-left {
+  top: 370px;
+  left: 200px;
+}
+
+.start-right {
+  top: 450px;
+  right: 230px;
+}
+
+/* Good Cleaner Box */
+.goodcleaner-box {
+  width: 60%;
+  height: 600px;
+  border-radius: 40px;
+  border: 4px solid #637BAD;
+  background-color: #EDF0F5D9;
+  font-family: 'Proxima Nova A', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #02297F;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.goodcleaner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  margin-left: 105px;
+}
+
+.goodcleaner-content {
+  width: 100%;
+  height: 465px;
+  font-weight: 400;
+  font-size: 24px;
+  background: #EDF0F5BF;
+  font-family: 'Proxima Nova A', sans-serif;
+  border-radius: 35px;
+  border: 3px solid #637BAD;
+  box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+  padding: 24px 105px;
+  box-sizing: border-box;
+}
+
+.goodcleaner-content p {
+  margin-bottom: 16px;
+}
+
+/* ===========================
+   SERVICE SECTION
+=========================== */
+.service {
+  font-family: 'Proxima Nova A', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #042B80;
+  margin: auto 0;
+}
+
+.service-box {
+  width: 70%;
+  height: 1240px;
+  border-radius: 40px;
+  background-color: #EEF1F6B2;
+  box-shadow: -4px -6px 8px #00000040;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card {
+  width: 100%;
+  height: 1030px;
+  border-radius: 40px;
+  background: #EEF1F6B2;
+  box-shadow: -4px -6px 8px #00000040;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding-top: 40px;
+  position: relative;
+}
+
+.service-item {
+  width: 90%;
+  height: 240px;
+  margin-left: 10px;
+  padding: 20px 0;
+  background: #EEF1F6B2;
+  color: #02297F;
+  border: 3px solid #637BAD;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.service-item:hover {
+  background-color: #f4f5f5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-title {
+  font-family: 'Proxima Nova A', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: auto;
+  max-width: 250px;
+}
+
+.service-detail {
+  position: absolute;
+  bottom: 32px;
+  left: 60%;
+  transform: translateX(-50%);
+  font-family: 'Proxima Nova A', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #E3B45B;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-detail:hover {
+  font-weight: 700;
+}
+
+.service-item:hover .service-detail {
+  opacity: 1;
+}
+
+.service-arrow {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  font-size: 50px;
+  color: #1E40AF;
+  transition: transform 0.3s ease;
+}
+
+/* ===========================
+   CARD STYLES
+=========================== */
+.service-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.hidden {
+  display: none;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background: #FFFFFF;
+  box-shadow: -4px -6px 8px #00000040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.card-content h2 {
+  font-family: 'Proxima Nova A', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #02297F;
+}
+
+.card-content p {
+  font-family: 'Proxima Nova A', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #02297F;
+  max-width: 650px;
+  line-height: 100%;
+}
+
+.back-btn {
+  font-family: 'Proxima Nova A', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #E3B45B;
+  position: absolute;
+  bottom: 130px;
+  right: 140px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  font-weight: 700;
+}
+
+.border-content {
+  width: 90%;
+  height: 90%;
+  border-radius: 40px;
+  border: 3px solid #637BAD;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+  
