@@ -280,45 +280,271 @@ h1 {
   overflow: hidden;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1442px) {
   .service-card {
     grid-template-columns: repeat(2, 1fr);
   }
-  .service-item {
-    width: 95%;
-    height: 220px;
-    margin-left: 20px;
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
-  .content-footer {
-    flex-wrap: wrap;
-  }
-  .service-title {
-    font-size: 64px;
-  }
-  .service-detail {
-    font-size: 28px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .service-card {
-    grid-template-columns: repeat(2, 1fr);
+  .left-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
   }
   .service-item {
-    width: 80%;
-    height: 180px;
+    width: 100%;
+    height: 120px;
     margin-left: 10px;
   }
   .content-footer {
     flex-wrap: wrap;
   }
+   
   .service-title {
-    font-size: 24px;
+    font-size: 12px;
   }
   .service-detail {
-    font-size: 20px;
+    font-size: 5%;
   }
-}
+  .service-box {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 1rem;
+  }
+  .goodcleaner-box {
+    width: 100%;
+    height: 500px;
+    font-size: 32px;
+  }
+  
+  .goodcleaner-content {
+    width: 100%;
+    height: 350px;
+    font-size: 16px;
+    padding: 16px 20px;
+    box-sizing: border-box;
+  }
+  
+  .service-item:hover {
+    background-color: #f4f5f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-title {
+    font-family: 'Proxima Nova A', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: auto;
+    max-width: 250px;
+  }
+  .service-item {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .service-detail {
+    position: relative;
+    bottom: 0%;
+    top: 40px; ;
+    left: 80%;
+    transform: translateX(-50%);
+    font-family: 'Proxima Nova A', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #E3B45B;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  
+  .service-detail:hover {
+    font-weight: 700;
+  }
+  
+  .service-item:hover .service-detail {
+    opacity: 1;
+  }
+  
+  .service-arrow {
+    position: relative;
+    bottom: 15px;
+    right: 20px;
+    font-size: 50px;
+    color: #1E40AF;
+    transition: transform 0.3s ease;
+  }
+  .footer {
+    display: wrap;
+    flex-direction: column;
+    align-items: left;
+    padding: 50px 0;
+  }
+  .footer img {
+    width: 200px;
+    height: auto;
+  }
+  .footer div {
+    font-family: 'Nova', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .left-footer div p {
+    font-family: 'Nova', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFFCC;
+    line-height: 20px;
+    text-align: left
+  }
+  }
+
+@media screen and (max-width: 992px) {
+  .service-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .service-item {
+    width: 100%;
+    height: 120px;
+    margin-left: 10px;
+  }
+  .content-footer {
+    flex-wrap: wrap;
+  }
+   
+  .service-title {
+    font-size: 12px;
+  }
+  .service-detail {
+    font-size: 5%;
+  }
+  .service-box {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 1rem;
+  }
+  .goodcleaner-box {
+    width: 100%;
+    height: 500px;
+    font-size: 32px;
+  }
+  
+  .goodcleaner-content {
+    width: 100%;
+    height: 350px;
+    font-size: 16px;
+    padding: 16px 20px;
+    box-sizing: border-box;
+  }
+  
+  .service-item:hover {
+    background-color: #f4f5f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-title {
+    font-family: 'Proxima Nova A', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: auto;
+    max-width: 250px;
+  }
+  .service-item {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .service-detail {
+    position: relative;
+    bottom: 0%;
+    top: 40px; ;
+    left: 80%;
+    transform: translateX(-50%);
+    font-family: 'Proxima Nova A', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #E3B45B;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  
+  .service-detail:hover {
+    font-weight: 700;
+  }
+  
+  .service-item:hover .service-detail {
+    opacity: 1;
+  }
+  
+  .service-arrow {
+    position: relative;
+    bottom: 15px;
+    right: 20px;
+    font-size: 50px;
+    color: #1E40AF;
+    transition: transform 0.3s ease;
+  }
+  .footer {
+    display: wrap;
+    flex-direction: column;
+    align-items: left;
+    padding: 50px 0;
+  }
+  .footer img {
+    width: 200px;
+    height: auto;
+  }
+  .footer div {
+    font-family: 'Nova', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .left-footer div p {
+    font-family: 'Nova', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFFCC;
+    line-height: 20px;
+    text-align: left
+  }
+  }
+
 
 @media screen and (max-width: 480px) {
 .service-card {
@@ -331,7 +557,7 @@ h1 {
 .left-header {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .service-item {
   width: 100%;
